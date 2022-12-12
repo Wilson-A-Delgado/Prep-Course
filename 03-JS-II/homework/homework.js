@@ -205,7 +205,14 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero > 99 && numero < 1000) {
+  let contador = 0;
+
+  while (numero >= 1) {
+    numero = numero / 10;
+    contador++;
+  }
+
+  if (contador == 3) {
     return true;
   } else {
     return false;
@@ -222,7 +229,7 @@ function doWhile(numero) {
     numero = numero + 5;
     i++;
   } while (i < 8);
-  
+
   return numero;
 }
 
