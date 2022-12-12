@@ -24,7 +24,7 @@ function mayoriaDeEdad(edad) {
     return "Not allowed";
   }
 }
-  
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico.
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -147,12 +147,12 @@ function operadoresLogicos(num1, num2, num3) {
   //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
-  //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
-  } else if(num1 > num2 && num1 > num3 && num1 > 0) {
+  } else if (num1 > num2 && num1 > num3 && num1 > 0) {
     return "Número 1 es mayor y positivo";
-  }  else if (num1 === 0 || num2 === 0 || num3 === 0) {
+  } else if (num1 === 0 || num2 === 0 || num3 === 0) {
     return "Error";
   } else if (num3 > num2 && num3 > num1) {
     return num3 + 1;
@@ -179,8 +179,8 @@ function esPrimo(numero) {
   }
 }
 
-function esVerdadero(valor){
-  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
+function esVerdadero(valor) {
+  //Escribe una función que reciba un valor booleano y retorne “Soy verdadero”
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if (valor == true) {
@@ -190,19 +190,19 @@ function esVerdadero(valor){
   }
 }
 
-function tablaDelSeis(){
+function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
+  //Escribe tu código aquí
   let tabla = [];
 
-  for (let i = 0; i < 11; i++){
+  for (let i = 0; i < 11; i++) {
     tabla[i] = 6 * i;
   }
   return tabla;
 }
 
-function tieneTresDigitos(numero){
+function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   let contador = 0;
@@ -233,7 +233,6 @@ function doWhile(numero) {
   return numero;
 }
 
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
@@ -252,5 +251,5 @@ module.exports = {
   esVerdadero,
   tablaDelSeis,
   tieneTresDigitos,
-  doWhile
+  doWhile,
 };
